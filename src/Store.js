@@ -10,16 +10,16 @@ function reducer(state, action) {
   console.log("reducer", state);
   switch (action.type) {
     case "ADD_NOTIFICATION": {
-      const newList = [...state.notifications, action.payload.msg];
+      const newList = [...state.notifications, ];
       return { ...state, notifications: newList };
     }
     case "DELETE_NOTIFICATION": {
-      const newList = state.notifications.shift() || [];
-      return { ...state, newList };
+        const {payload} = action;
+        const newList = state.notifications.filter(item=>item!==payload.msg);
+        console.log("delete_notif",newList);
+      //const newList = state.notifications.shift() || [];
+      return { ...state, notifications:newList };
     }
-    case "SHOW_NOTIFICATION":
-      const newList = [...state.notifications, action.payload.item];
-      return { ...state, newList };
     default:
       return state;
   }

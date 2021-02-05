@@ -1,5 +1,50 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap");
+:root {
+  --backgroundBase: #151515;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--white);
+}
+
+.banner {
+  height: 30vh;
+  font-size: 46px;
+  padding-left: 50px;
+  padding-top: 40px;
+  font-weight: 800;
+  letter-spacing: 0.04rem;
+  line-height: 1;
+}
+
+.appCointainer {
+  margin-right: 120px;
+  margin-left: 120px;
+}
+
+@media (max-width: 800px) {
+  .appCointainer {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  .banner {
+  font-size: 32px;
+  padding-left: 40px;
+  font-weight: 800;
+  letter-spacing: 0.04rem;
+
+  }
+}
+
+body {
+  background: var(--backgroundBase);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .App-logo {
@@ -21,8 +66,8 @@
   margin-bottom: 40px;
 }
 
-.notification{
-  background:#61dafb;
+.notification {
+  background: #61dafb;
   height: 40px;
   width: 140px;
   display: grid;
