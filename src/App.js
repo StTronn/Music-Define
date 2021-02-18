@@ -17,7 +17,7 @@ const cards = [
   },
   {
     img: "https://ca.slack-edge.com/T6QJPBP37-UGMMYK9ML-729d435d254a-512",
-    title: "Harshit Pruhit",
+    title: "Harshit Pruthi",
     artist: "Core-FD",
   },
   {
